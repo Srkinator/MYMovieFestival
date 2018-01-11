@@ -2,7 +2,7 @@
 
 Movie Festival is a simple app writen in vanilla JavaScript where you can add movies, programs, movies to programs and create a Festivals.
 
-[DEMO](https://srkinator.github.io/MyMovieFestival/)
+DEMO: [Movie Festival](https://srkinator.github.io/MyMovieFestival/)
 
 
 # Showcasing
