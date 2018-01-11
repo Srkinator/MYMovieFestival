@@ -48,6 +48,7 @@ function createMovie() {
     listOfMovies += "</ol>";
     moviesSelect.innerHTML = moviesOptions;
     movieList.innerHTML = listOfMovies;
+
 };
 
 function createProgram() {
@@ -83,6 +84,7 @@ function createProgram() {
         listOfPrograms += "<li>" + prog.getData() + "</li>";
         programsOptions += "<option value='" + i + "'>" + prog.getData() + "</option>";
     }
+
     listOfPrograms += "</ol>";
 
     programList.innerHTML = listOfPrograms;
@@ -102,6 +104,7 @@ function addMovie() {
         errorElement.textContent = "Error!"
         return;
     }
+
     errorElement.textContent = "";
 
     for (var i = 0; i < programs[selectProgramOption].listOfMovies.length; i++) {
@@ -110,6 +113,7 @@ function addMovie() {
             return;
         }
     }
+
     errorElement.textContent = "";
 
     programs[selectProgramOption].listOfMovies.push(movies[selectMovieOption]);
@@ -127,6 +131,7 @@ function addMovie() {
     programList.innerHTML = programOutput;
 
 };
+
 function addProgram() {
     var selectProgramElement = document.getElementById("programFest");
     var selectProgramOption = selectProgramElement[selectProgramElement.selectedIndex].value;
@@ -136,6 +141,7 @@ function addProgram() {
         errorElement.textContent = "Error!"
         return;
     }
+
     errorElement.textContent = "";
 
     for (var i = 0; i < fest.listOfPrograms.length; i++) {
@@ -144,12 +150,14 @@ function addProgram() {
             return;
         }
     }
+
     errorElement.textContent = "";
 
     fest.listOfPrograms.push(programs[selectProgramOption]);
     errorElement.textContent = "Program added to festival!"
 
 };
+
 function festivalProgram() {
     var progFestElement = document.getElementById("progfest-list");
 
